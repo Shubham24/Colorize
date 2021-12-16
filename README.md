@@ -1,40 +1,57 @@
 # Colorize
 Colorize Library for Java based on Fazibear's Colorize gem for Ruby
 
+## Description
+Allows for displaying colored text and colored highlighting on a console/command-line. Tested on Windows Terminal (Powershell and Ubuntu/WSL).
+
 ## Usage
 
 ### Colors
 
-Colors |
--------
-Red |
-GREEN |
-YELLOW |
-BLUE |
-PURPLE |
-CYAN |
-GRAY |
-BRIGHT_RED |
-BRIGHT_GREEN |
-BRIGHT_YELLOW |
-BRIGHT_BLUE |
-BRIGHT_MAGENTA |
-BRIGHT_CYAN |
-RESET |
+|Colors |
+|-------|
+| RED |
+| GREEN |
+| YELLOW |
+| BLUE |
+| PURPLE |
+| CYAN |
+| GRAY |
+| BRIGHT_RED |
+| BRIGHT_GREEN |
+| BRIGHT_YELLOW |
+| BRIGHT_BLUE |
+| BRIGHT_MAGENTA |
+| BRIGHT_CYAN |
+| RESET |
 
 ### Backgrounds
 
-Backgrounds |
------------
-BLACK |
-RED |
-GREEN |
-YELLOW |
-BLUE |
-PURPLE |
-CYAN |
-WHITE |
+| Backgrounds |
+| ----------- |
+| BLACK |
+| RED |
+| GREEN |
+| YELLOW |
+| BLUE |
+| PURPLE |
+| CYAN |
+| WHITE |
 
+### Notes
+
+RESET color can be used reset colors/background back to default. Though, `colorize()` takes care of reseting back to default after applying the styling ot the given text.
+
+### Methods
+
+#### `colorize(String string, COLORS color)`
+Color a given a String with specified color.
+
+#### `colorize(String string, BACKGROUNDS background)`
+Highlight a given String with specified background.
+
+#### `colorize(String string, COLORS color, BACKGROUNDS background)`
+Color and highlight a given String with specified color and background.
 
 ### Examples
 ```
