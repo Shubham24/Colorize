@@ -78,7 +78,7 @@ public class Test {
     System.out.println("Hello World -- Colored".colorize(Colorize.COLORS.BLUE));
 
     // Print out a String with a colored background
-    System.out.println("Hello World -- Blue Backgroun   d".colorize(Colorize.BACKGROUNDS.BLUE));
+    System.out.println("Hello World -- Blue Background".colorize(Colorize.BACKGROUNDS.BLUE));
 
     // Print out a colored String with colored background
     System.out.println("Hello World -- Colored String and Colored Background".colorize(Colorize.COLORS.BLUE, Colorize.BACKGROUNDS.WHITE));
